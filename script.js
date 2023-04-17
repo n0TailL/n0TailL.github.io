@@ -39,7 +39,7 @@ function copyToClipboard() {
         }
         checkedCategories.add(category);
         options += '\n' + category + '\n';
-        options += '\n ✔ ' + radio.value + '\n';
+        options += ' ✔ ' + radio.value + '\n';
     });
     navigator.clipboard.writeText(options).then(function() {
         // alert("Copied to clipboard:\n" + options);
